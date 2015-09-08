@@ -4,6 +4,7 @@ apt-get -qqy install python-pip
 apt-get -qqy install git
 apt-get -qqy install apache2 php5 mysql-server php5-mysql 
 apt-get -qqy install cron-apt
+apt-get -qqy install phpmyadmin
 pip install oauth2client
 pip install sqlalchemy
 pip install flask
