@@ -7,6 +7,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "pg_config.sh"
   # config.vm.box = "hashicorp/precise32"
   config.vm.box = "ubuntu/trusty32"
-  config.vm.network "forwarded_port", guest: 8880, host: 8880
-  config.vm.network :forwarded_port, guest: 80, host: 8880
+  config.vm.network "forwarded_port", guest: 8885, host: 8885
+  config.vm.network :forwarded_port, guest: 80, host: 8885
 end
