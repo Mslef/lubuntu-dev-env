@@ -1,14 +1,13 @@
 apt-get -qqy update
 apt-get -qqy install postgresql python-psycopg2 libapache2-mod-wsgi 
+apt-get -qqy install vim
 apt-get -qqy install python-pip
 apt-get -qqy install git
 apt-get -qqy install apache2 php5 mysql-server php5-mysql 
 apt-get -qqy install cron-apt
-apt-get -qqy install phpmyadmin
+apt-get -qqy install php5-curl
 pip install oauth2client
-pip install sqlalchemy
-pip install flask
-pip install django
+pip install django djangorestframework
 pip install requests
 pip install httplib2
 
