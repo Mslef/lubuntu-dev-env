@@ -9,4 +9,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 9000, host: 9000
   config.vm.network :forwarded_port, guest: 80, host: 9080
   config.vm.network :forwarded_port, guest: 8888, host: 9088
+  config.vm.synced_folder "sync/", "/sync/"
 end
+
