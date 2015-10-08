@@ -4,7 +4,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.provision "shell", path: "pg_config.sh"
+  config.vm.provision "shell", path: "config.sh"
   config.vm.box = "mast3rof0/lubuntu64"
   config.vm.network "forwarded_port", guest: 9000, host: 9000
   config.vm.network :forwarded_port, guest: 80, host: 9080
